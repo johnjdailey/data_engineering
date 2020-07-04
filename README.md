@@ -1,7 +1,7 @@
 # data_engineering
 The repository contains multiple examples of perfoeming ETL using Spark and Hadoop MR.
 
-##### WordCount-MapReduce
+#### WordCount-MapReduce
 
 Count number of words in text files stored in HDFS.
 - `hdfs dfs` can be used to copy files from disk to HDFS.
@@ -15,5 +15,5 @@ hdfs -ls
 
 yarn jar wordcount.jar WordCount -D mapreduce.job.reduces=n {input} {output}
 ```
-##### AverageJSON-MapReduce
+#### AverageJSON-MapReduce
 Calculate averages in JSON files using Hadoop MapReduce.
