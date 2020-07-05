@@ -38,3 +38,10 @@ Slight variation in WordCount-Pyspark to improve efficiency.
 ### 7) euler_constant 
 Calculate euler constant using PySpark.
 
+### 8) spark-cache-broadcast-join
+This set of examples goes deeper into operations performed by spark, this includes- joins, cache and broadcast.
+- `.cache()`: Spark uses lazy evaluation and intermediate results are discarded. In case, the code needs to reuse a variable it will get re-computed. This can be overcome by caching the intermediate variable using .cache()
+- `.join()`:  It is used to join two RDDs or Dataframes. If we are working in a cluster with multiple executers the the join operation will cause a lot of shuffling. This causes delays and uses a lot more memory. Solution -> broadcast.
+- `.broadcast()`: Broadcasting an RDD will copy the entire RDD to each executer which will avoid the excess shuffling of data.
+
+
