@@ -15,5 +15,12 @@ hdfs -ls
 
 yarn jar wordcount.jar WordCount -D mapreduce.job.reduces=n {input} {output}
 ```
-### 2) AverageJSON-MapReduce
-Calculate averages in JSON files using Hadoop MapReduce.
+### 2) WordCountImproved-MapReduce
+Slight variation in WordCount-MapReduce to improve efficiency. 
+
+### 3) AverageRedditScore-MapReduce
+Calculate averages scores from subreddits avaiable in reddit Reddit Comments Corpus as JSON files using Hadoop MapReduce.
+
+### 4) WordCount-Pyspark
+### 5) WordCountImproved-PySpark
+### 6) WikipediaPopular
