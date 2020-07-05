@@ -19,8 +19,19 @@ yarn jar wordcount.jar WordCount -D mapreduce.job.reduces=n {input} {output}
 Slight variation in WordCount-MapReduce to improve efficiency. 
 
 ### 3) AverageRedditScore-MapReduce
-Calculate averages scores from subreddits avaiable in reddit Reddit Comments Corpus as JSON files using Hadoop MapReduce.
+Calculate averages scores from subreddits avaiable in Reddit Comments Corpus as JSON files using Hadoop MapReduce.
 
-### 4) WordCount-Pyspark
-### 5) WordCountImproved-PySpark
-### 6) WikipediaPopular
+### 4) WikipediaPopular
+Used page view statistics published by wikipedia to calculate number of times a page was visited in an hour. 
+- The code was implemented both using Mapper/Reducer in java and Spark in Python.
+- PySpark is run using `spark-submit`
+```sh
+spark-submit wikipedia_popular.py {input} {output}
+```
+
+### 5) WordCount-Pyspark
+The word count implementation using PySpark.
+
+### 6) WordCountImproved-PySpark
+Slight variation in WordCount-Pyspark to improve efficiency.
+
