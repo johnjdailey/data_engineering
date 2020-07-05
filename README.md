@@ -1,5 +1,5 @@
 # data_engineering
-The repository contains multiple examples of perfoeming ETL using Spark and Hadoop MR.
+This repository contains multiple examples of performing ETL using Spark and Hadoop MR.
 
 ### 1) WordCount-MapReduce
 
@@ -43,5 +43,9 @@ This set of examples goes deeper into operations performed by spark, this includ
 - `.cache()`: Spark uses lazy evaluation and intermediate results are discarded. In case, the code needs to reuse a variable it will get re-computed. This can be overcome by caching the intermediate variable using .cache()
 - `.join()`:  It is used to join two RDDs or Dataframes. If we are working in a cluster with multiple executers the the join operation will cause a lot of shuffling. This causes delays and uses a lot more memory. Solution -> broadcast.
 - `.broadcast()`: Broadcasting an RDD will copy the entire RDD to each executer which will avoid the excess shuffling of data.
+
+### 9) dataframes-sparkSql
+- These examples use Spark Dataframes instead of RDDs. Using either depends on which abstraction you are more familier with. Dataframes are easier to understand and work on if someone has basic SQL knowledge. 
+- The operations like where, filter, select can be both performed as functions and SQL statements (SparkSQL). Again, anything can be chosen based on level of comfort and experience. 
 
 
