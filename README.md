@@ -35,3 +35,6 @@ The word count implementation using PySpark.
 ### 6) WordCountImproved-PySpark
 Slight variation in WordCount-Pyspark to improve efficiency.
 
+### 7) euler_constant 
+Calculate euler constant using PySpark.
+
